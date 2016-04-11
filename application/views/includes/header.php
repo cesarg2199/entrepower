@@ -13,9 +13,14 @@
 <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-     <!-- <a class="navbar-brand" href="#">EntrePOWER</a> -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="<?php echo base_url('power/index');?>"><img src="<?php echo base_url('assets/img/logo1.jpg');?>" alt="EntrePOWER"></a>
     </div>
+    <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav navbar-right">
       <li><a href="<?php echo base_url('power/index');?>">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EntrePOWER<span class="caret"></span></a>
@@ -29,6 +34,7 @@
       <li><a href="<?php echo base_url('power/alumni');?>">Alumni</a></li>
       <li><a href="<?php echo base_url('power/jobEmployment');?>">Job Employment</a></li>
     </ul>
+    </div>
   </div>
 </nav> <!-- End of navbar -->
   
