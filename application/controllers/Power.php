@@ -31,14 +31,32 @@ class Power extends CI_Controller
 		$this->load->view('includes/footer');
 	}
 
-	public function powerTraining()
+	public function powerTrainingPublic()
 	{
-
+		$this->load->view('includes/header');
+		$this->load->view('powerTrainingPublic');
+		$this->load->view('includes/footer');
 	}
 
-	public function entreCurriculum()
+	public function powerTrainingPrivate()
 	{
+		$this->load->view('includes/header');
+		$this->load->view('entreCurriculumPrivate');
+		$this->load->view('includes/footer');
+	}
 
+	public function entreCurriculumPublic()
+	{
+		$this->load->view('includes/header');
+		$this->load->view('entreCurriculumPublic');
+		$this->load->view('includes/footer');
+	}
+
+	public function entreCurriculumPrivate()
+	{
+		$this->load->view('includes/header');
+		$this->load->view('entreCurriculumPrivate');
+		$this->load->view('includes/footer');
 	}
 
 	public function Alumni()

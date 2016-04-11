@@ -16,12 +16,12 @@
      <!-- <a class="navbar-brand" href="#">EntrePOWER</a> -->
       <a class="navbar-brand" href="<?php echo base_url('power/index');?>"><img src="<?php echo base_url('assets/img/logo1.jpg');?>" alt="EntrePOWER"></a>
     </div>
-    <ul class="nav navbar-nav navbar-left">
+    <ul class="nav navbar-nav navbar-right">
       <li><a href="<?php echo base_url('power/index');?>">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EntrePOWER<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">POWER Training</a></li>
-          <li><a href="#">Entre Ciriculum</a></li>
+          <li><a onclick="checkLoginPower('training')">POWER Training</a></li>
+          <li><a onclick="checkLoginEntre('ciriculum')">Entre Ciriculum</a></li>
         </ul>
       </li>
       <li><a href="<?php echo base_url('power/about');?>">About Us</a></li>
@@ -29,10 +29,33 @@
       <li><a href="<?php echo base_url('power/alumni');?>">Alumni</a></li>
       <li><a href="<?php echo base_url('power/jobEmployment');?>">Job Employment</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="<?php echo base_url('power/about');?>">Login</a></li>
-    </ul>
   </div>
-</nav>
+</nav> <!-- End of navbar -->
   
 <div class="container">
+
+<!-- Login modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title" id="lineModalLabel">Login for Premium Content</h3>
+      </div>
+      <div class="modal-body">
+      <!-- content goes here -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button type="submit" class="btn entrePOWERColor ">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
