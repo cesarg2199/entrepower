@@ -4,46 +4,57 @@ Responsive navbar-brand image CSS
 - add 100% height and width auto ... similar to how bootstrap img-responsive class works
 ***********************************/
 
-/*
 .navbar-brand {
   padding: 0px;
 }
-
 .navbar-brand>img {
   height: 100%;
   padding: 15px;
-  width: auto;
+  width: 150px;
 }
 
-CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells 
-
-.navbar-alignit .navbar-header {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  height: 50px;
+.dropdown:hover .dropdown-menu {
+display: block;
 }
 
-.navbar-alignit .navbar-brand {
-  top: 50%;
-  display: block;
-  position: relative;
-  height: auto;
-  transform: translate(0, -50%);
-  margin-right: 15px;
-  margin-left: 15px;
+.div-center {
+       position: absolute;
+       top: 40%;
+       left: 0;
+       bottom: 0;
+       right: 0;
+       margin: auto;
+  }
+
+.sharp {
+  border-radius:0;
 }
 
-.navbar-nav>li>.dropdown-menu {
-  z-index: 9999;
-} */
+.entrePOWERColor{
+  background-color:rgb(156, 32, 23);
+  color:white;
+}
+
+
+/*************************
+EXAMPLES 2-7 BELOW 
+**************************/
+
+/* EXAMPLE 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+.example2 .navbar-brand>img {
+  padding: 8px 16px;
+}
+
 
 .navbar {
-  background-color :red;
+  background-color: rgb(156, 32, 23);
+  border-bottom: white;
 }
 
 .navbar .navbar-brand{
   color:white;
+  background-color: white;
 }
 
 .navbar .nav > li > a {
@@ -54,13 +65,13 @@ CSS Transform Align Navbar Brand Text ... This could also be achieved with table
     float: none;
     color: #fff;
     border-bottom: solid #fff;
-    background-color:red;
+    background-color:rgb(156, 32, 23);;
 }
 
 .navbar .nav > li > a:focus {
     float: none;
     color:white;
-    background-color:red;
+    background-color:rgb(156, 32, 23);;
 }
 
 .container

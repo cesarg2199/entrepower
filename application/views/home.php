@@ -11,14 +11,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="<?php echo base_url('assets/img/logo.jpg');?>" alt="Chania">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/logo.jpg');?>" alt="Chania">
       <div class="carousel-caption">
         <h3>EntrePOWER</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="<?php echo base_url('assets/img/test.jpg');?>" alt="Chania">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/test.jpg');?>" alt="Chania">
       <div class="carousel-caption">
         <h3>Chania</h3>
         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -26,14 +26,14 @@
     </div>
 
     <div class="item">
-      <img src="<?php echo base_url('assets/img/logo.jpg');?>" alt="Flower">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/logo.jpg');?>" alt="Flower">
       <div class="carousel-caption">
         <h3>EntrePOWER</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="<?php echo base_url('assets/img/test.jpg');?>" alt="Flower">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/test.jpg');?>" alt="Flower">
       <div class="carousel-caption">
         <h3>EntrePOWER</h3>
       </div>
@@ -53,11 +53,11 @@
 <div class="container">
 <div class="row">
   <div class="col-sm-4"></div>
-  <div class="col-sm-4"><h1 class="text-center">Our Mission</h1></div>
+  <div class="col-sm-4"><h1 class="text-center animated fadeIn">Our Mission</h1></div>
   <div class="col-sm-4"></div>
 </div
 ><div class="row">
-  <div class="col-sm-12"><h3 class="text-center"><i>Our mission is to empower those with special needs through entrepreneurship.</i></h3></div>
+  <div class="col-sm-12"><h3 class="text-center animated fadeIn"><i>Our mission is to empower those with special needs through entrepreneurship.</i></h3></div>
 </div>
 
 
