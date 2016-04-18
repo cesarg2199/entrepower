@@ -18,7 +18,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo base_url('power/index');?>"><img src="<?php echo base_url('assets/img/logo1.jpg');?>" alt="EntrePOWER"></a>
+      <a class="navbar-brand" href="<?php echo base_url('power/index');?>"><img src="<?php echo base_url('assets/img/logo.png');?>" alt="EntrePOWER"></a>
     </div>
     <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav navbar-right">

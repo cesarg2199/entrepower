@@ -11,14 +11,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/logo.jpg');?>" alt="Chania">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c1.jpg');?>" alt="Chania">
       <div class="carousel-caption">
         <h3>EntrePOWER</h3>
       </div>
     </div>
 
     <div class="item">
-      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/test.jpg');?>" alt="Chania">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c2.jpg');?>" alt="Chania">
       <div class="carousel-caption">
         <h3>Chania</h3>
         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -26,19 +26,11 @@
     </div>
 
     <div class="item">
-      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/logo.jpg');?>" alt="Flower">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c3.jpg');?>" alt="Flower">
       <div class="carousel-caption">
         <h3>EntrePOWER</h3>
       </div>
     </div>
-
-    <div class="item">
-      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/test.jpg');?>" alt="Flower">
-      <div class="carousel-caption">
-        <h3>EntrePOWER</h3>
-      </div>
-    </div>
-  </div>
 
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
