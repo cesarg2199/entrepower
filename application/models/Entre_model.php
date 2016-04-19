@@ -20,5 +20,16 @@ class Entre_model extends CI_Model
     	echo $method;
     }
 
+    public function login()
+    {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+
+        $success = $this->db->query("select * from users where email = '{$email}' and password = '{$password}'");
+
+        if($success){ return true; }
+        else { return false; }
+    }
+
 }
 ?>

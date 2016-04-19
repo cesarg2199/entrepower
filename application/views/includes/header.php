@@ -25,8 +25,8 @@
       <li><a href="<?php echo base_url('power/index');?>">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EntrePOWER<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a onclick="checkLoginPower('training')">POWER Training</a></li>
-          <li><a onclick="checkLoginEntre('ciriculum')">Entre Ciriculum</a></li>
+          <li><a onclick="checkLoginPower()">POWER Training</a></li>
+          <li><a onclick="checkLoginEntre()">Entre Ciriculum</a></li>
         </ul>
       </li>
       <li><a href="<?php echo base_url('power/about');?>">About Us</a></li>
@@ -41,7 +41,7 @@
 <div class="container">
 
 <!-- Login modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal fade" id="loginModalPower" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -50,17 +50,42 @@
       </div>
       <div class="modal-body">
       <!-- content goes here -->
-        <form>
+        <?php echo form_open('Power/login?page=power'); ?>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
           </div>
           <button type="submit" class="btn entrePOWERColor ">Submit</button>
-        </form>
+        <?php echo form_close(); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="loginModalEntre" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title" id="lineModalLabel">Login for Premium Content</h3>
+      </div>
+      <div class="modal-body">
+      <!-- content goes here -->
+        <?php echo form_open('Power/login?page=entre'); ?>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button type="submit" class="btn entrePOWERColor ">Submit</button>
+        <?php echo form_close(); ?>
       </div>
     </div>
   </div>

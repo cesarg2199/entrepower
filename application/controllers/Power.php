@@ -78,6 +78,35 @@ class Power extends CI_Controller
 	{
 		$status = $this->entre_model->sendContactEmail();
 	}
+
+	public function login()
+	{
+		$page = $this->input->get('page');
+		$login = $this->entre_model->login();
+
+		if($page == 'power')
+		{
+			if($login)
+			{
+				$this->powerTrainingPrivate();
+			}
+			else
+			{
+				$this->powerTrainingPublic();
+			}
+		}
+		elseif ($page == 'entre') 
+		{
+			if($login)
+			{
+				$this->entreCurriculumPublic();
+			}
+			else
+			{
+				$this->entreCurriculumPrivate();
+			}
+		}
+	}
 }
 
 

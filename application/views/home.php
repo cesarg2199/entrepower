@@ -11,25 +11,51 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c1.jpg');?>" alt="Chania">
-      <div class="carousel-caption">
-        <h3>EntrePOWER</h3>
-      </div>
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c1.jpg');?>" alt="Entrepower">
     </div>
 
     <div class="item">
-      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c2.jpg');?>" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Chania</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c2.jpg');?>" alt="Entrepower">
     </div>
 
     <div class="item">
-      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c3.jpg');?>" alt="Flower">
-      <div class="carousel-caption">
-        <h3>EntrePOWER</h3>
-      </div>
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c3.jpg');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c4.jpg');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c5.jpg');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c6.png');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c7.png');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c8.png');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c9.png');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c10.png');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c11.png');?>" alt="Entrepower">
+    </div>
+
+    <div class="item">
+      <img class="img-responsive center-block" src="<?php echo base_url('assets/img/work/c12.png');?>" alt="Entrepower">
     </div>
 
   <!-- Left and right controls -->
