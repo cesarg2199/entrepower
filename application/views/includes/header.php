@@ -50,7 +50,7 @@
       </div>
       <div class="modal-body">
       <!-- content goes here -->
-        <?php echo form_open('Power/login?page=power'); ?>
+        <?php echo form_open('Power/loginPower'); ?>
           <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
@@ -75,7 +75,7 @@
       </div>
       <div class="modal-body">
       <!-- content goes here -->
-        <?php echo form_open('Power/login?page=entre'); ?>
+        <?php echo form_open('Power/loginEntre');?>
           <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">

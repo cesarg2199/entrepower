@@ -61,7 +61,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="container ">
+<div class="container box">
 <div class="row">
   <div class="col-sm-4"></div>
   <div class="col-sm-4 box">

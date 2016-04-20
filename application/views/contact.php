@@ -7,7 +7,7 @@
             <legend><span class="glyphicon glyphicon-globe"></span>EntrePOWER</legend>
             <address>
                 <strong>Email</strong><br>
-                <a href="mailto:#">entrepower@gmail.com</a>
+                <a href="mailto:entrepower@gmail.com">entrepower@gmail.com</a>
             </address>
         </form>
     </div>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button type="submit" class="btn entrePOWERColor pull-right sharp" id="btnContactUs">Send Message</button>
+                        <button type="submit" class="btn entrePOWERColor pull-right sharp" onclick="verifyContactMessage" id="btnContactUs">Send Message</button>
                     </div>
                 </div>
                 <?php echo form_close(); ?>

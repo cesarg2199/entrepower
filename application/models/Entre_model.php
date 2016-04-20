@@ -45,10 +45,22 @@ class Entre_model extends CI_Model
         $email = $this->input->post('email');
         $password = $this->input->post('password');
 
-        $success = $this->db->query("select * from users where email = '{$email}' and password = '{$password}'");
+        $this->db->where("email", $email);
+        $this->db->where("password", $password);
+        $query = $this->db->get("users")->result();
 
-        if($success){ return true; }
-        else { return false; }
+
+        if($query)
+        {
+            $this->session->set_userdata(array('isLoggedIn' => true));
+            return true;
+        }
+        else
+        {
+            $this->session->set_userdata(array('isLoggedIn' => false));
+           return false;
+        }
+
     }
 
 }

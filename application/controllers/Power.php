@@ -41,7 +41,7 @@ class Power extends CI_Controller
 	public function powerTrainingPrivate()
 	{
 		$this->load->view('includes/header');
-		$this->load->view('entreCurriculumPrivate');
+		$this->load->view('powerTrainingPrivate');
 		$this->load->view('includes/footer');
 	}
 
@@ -89,32 +89,31 @@ class Power extends CI_Controller
 		}
 	}
 
-	public function login()
+	public function loginPower()
 	{
-		$page = $this->input->get('page');
 		$login = $this->entre_model->login();
 
-		if($page == 'power')
+		if($login)
 		{
-			if($login)
-			{
-				$this->powerTrainingPrivate();
-			}
-			else
-			{
-				$this->powerTrainingPublic();
-			}
+			$this->powerTrainingPrivate();
 		}
-		elseif ($page == 'entre') 
+		else
 		{
-			if($login)
-			{
-				$this->entreCurriculumPublic();
-			}
-			else
-			{
-				$this->entreCurriculumPrivate();
-			}
+			$this->powerTrainingPublic();
+		}
+	}
+
+	public function loginEntre()
+	{
+		$login = $this->entre_model->login();
+
+		if(!$login)
+		{
+			$this->entreCurriculumPublic();
+		}
+		else
+		{
+			$this->entreCurriculumPrivate();
 		}
 	}
 }

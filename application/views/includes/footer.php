@@ -4,9 +4,14 @@
 <script>
 	
 
+	function verifyContactMessage()
+	{
+		//verify contact message is filled otu
+	}
+
 	function checkLoginPower()
 	{	
-		var isLoggedIn = false;
+		var isLoggedIn = <?php if($this->session->userdata('isLoggedIn')) { echo$this->session->userdata('isLoggedIn');} else { echo "false"; }?>;
 
 		//Check if logged in already
 		if(isLoggedIn)
@@ -22,7 +27,7 @@
 
 	function checkLoginEntre()
 	{	
-		var isLoggedIn = false;
+		var isLoggedIn = <?php if($this->session->userdata('isLoggedIn')) { echo$this->session->userdata('isLoggedIn');} else { echo "false"; }?>;
 
 		//Check if logged in already
 		if(isLoggedIn)
