@@ -39,12 +39,22 @@
 
 	function verifyContactMessage()
 	{
-		//verify contact message is filled otu
+		var name = document.getElementById('name').value;
+		var school = document.getElementById('school').value;
+		var email = document.getElementById('email').value;
+		var message = document.getElementById('message').value;
+		
+		if((name == '') || (school == '') || (email == '') || (message == ''))
+		{
+			alert("Please fill out all the required information before submititng, Thank you.");
+			return false;
+		}
+		
 	}
 
 	function checkLoginPower()
 	{	
-		var isLoggedIn = <?php if($this->session->userdata('isLoggedIn')) { echo$this->session->userdata('isLoggedIn');} else { echo "false"; }?>;
+		var isLoggedIn = <?php if($this->session->userdata('isLoggedIn')) { echo $this->session->userdata('isLoggedIn');} else { echo "false"; }?>;
 
 		//Check if logged in already
 		if(isLoggedIn)
@@ -60,7 +70,7 @@
 
 	function checkLoginEntre()
 	{	
-		var isLoggedIn = <?php if($this->session->userdata('isLoggedIn')) { echo$this->session->userdata('isLoggedIn');} else { echo "false"; }?>;
+		var isLoggedIn = <?php if($this->session->userdata('isLoggedIn')) { echo $this->session->userdata('isLoggedIn');} else { echo "false"; }?>;
 
 		//Check if logged in already
 		if(isLoggedIn)

@@ -18,21 +18,21 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Full Name</label>
-                                <input type="text" class="form-control" name="name" placeholder="Enter name" required="required" />
+                                Full Name*</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="name">
-                                School Affiliation</label>
-                                <input type="text" class="form-control" name="school" placeholder="Enter School" required="required" />
+                                School Affiliation*</label>
+                                <input type="text" class="form-control" id="school" name="school" placeholder="Enter School" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="email">
-                                Email Address</label>
+                                Email Address*</label>
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" class="form-control" name="email" placeholder="Enter Email" required="required" /></div>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required="required" /></div>
                         </div>
                         <div class="form-group">
                             <label for="phone">
@@ -56,13 +56,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="message">
-                                Message</label>
-                            <textarea name="message" name="message" class="form-control" rows="9" cols="25" required="required"
+                                Message*</label>
+                            <textarea id="message" name="message" class="form-control" rows="9" cols="25" required="required"
                                 placeholder="Message"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button type="submit" class="btn entrePOWERColor pull-right sharp" onclick="verifyContactMessage" id="btnContactUs">Send Message</button>
+                        <button type="submit" class="btn entrePOWERColor pull-right sharp" onclick="verifyContactMessage()" id="btnContactUs">Send Message</button>
                     </div>
                 </div>
                 <?php echo form_close(); ?>
