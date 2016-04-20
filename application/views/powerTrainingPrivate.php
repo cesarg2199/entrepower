@@ -1,4 +1,4 @@
-<div class="page-header text-center">
+<div class="page-header text-center entreBottom">
 	<h1>POWER Training</h1>
 	 <p>P.O.W.E.R. is an acronym for <b>Positive</b>, <b>Observe</b>, <b>Work</b> together, <b>Energy</b>, and <b>Reason</b>, which are crucial principles towards understanding how to properly educate special needs students. Each recipient of the training is taught the foundational skills and characteristics needed to deal with various situations that often occur in special education classrooms.</p>
 </div>
@@ -43,10 +43,10 @@
 		</div>
 		</div>
 	<div class="col-sm-6">
-		<a class="popup" href="<?php echo base_url('assets/videos/entre/Activate.mp4'); ?>">Open YouTube video</a><br>
-		<a class="popup" href="<?php echo base_url('assets/videos/entre/Activate.mp4'); ?>">Open YouTube video</a><br>
-		<a class="popup" href="<?php echo base_url('assets/videos/entre/Activate.mp4'); ?>">Open YouTube video</a><br>
-		<a class="popup" href="<?php echo base_url('assets/videos/entre/Activate.mp4'); ?>">Open YouTube video</a><br>
-		<a class="popup" href="<?php echo base_url('assets/videos/entre/Activate.mp4'); ?>">Open YouTube video</a><br>
+				<div class="page-header entreBottom"><b>POWER</b></div>
+			<div class="row">
+			<a class="popup video" href="<?php echo base_url('assets/videos/entre/E1.m4v');?>"> <img class="img-responsive center-block" src="<?php echo base_url('assets/img/videonails/e1.png');?>"
+			 alt="Entrepower"></a>
+			 </div>
 	</div>
 </div>

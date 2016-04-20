@@ -60,7 +60,7 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
           </div>
-          <button type="submit" class="btn entrePOWERColor ">Submit</button>
+          <button type="submit" class="btn entrePOWERColor ">Login</button>
         <?php echo form_close(); ?>
       </div>
     </div>
@@ -85,7 +85,7 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
           </div>
-          <button type="submit" class="btn entrePOWERColor ">Submit</button>
+          <button type="submit" class="btn entrePOWERColor">Login</button>
         <?php echo form_close(); ?>
       </div>
     </div>

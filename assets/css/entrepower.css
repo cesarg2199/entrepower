@@ -34,8 +34,13 @@ display: block;
   width:550px;
 }
 
-.carousel-controls-mini {
+.page-header{
+  margin: 26px 0px 20px
+}
 
+.video {
+  float: left;
+  padding: 3px;
 }
 
 .carousel-controls-mini > a {
@@ -45,6 +50,7 @@ display: block;
     float:left;
     text-align:center;
     margin-top: 20px;
+    margin-left: 10px;
 }
 
 .fix
