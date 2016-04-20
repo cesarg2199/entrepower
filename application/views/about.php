@@ -1,4 +1,4 @@
-<div class="page-header text-center">
+<div class="page-header text-center entreBottom">
   <h1>About us</h1>
   <p>We are a small team dedicated to empowering those with special needs through entrepreneurship.</p>
 </div>

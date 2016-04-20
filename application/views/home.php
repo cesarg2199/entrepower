@@ -1,12 +1,5 @@
 </div><!-- Closing the container from header -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
@@ -68,14 +61,17 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="container">
+<div class="container ">
 <div class="row">
   <div class="col-sm-4"></div>
-  <div class="col-sm-4"><h1 class="text-center animated fadeIn">Our Mission</h1></div>
+  <div class="col-sm-4 box">
+    <h1 class="text-center animated fadeIn">Our Mission</h1>
+    <h3 class="text-center animated fadeIn "><i>Our mission is to empower those with special needs through entrepreneurship.</i></h3>
+  </div>
   <div class="col-sm-4"></div>
 </div
 ><div class="row">
-  <div class="col-sm-12"><h3 class="text-center animated fadeIn"><i>Our mission is to empower those with special needs through entrepreneurship.</i></h3></div>
+  <div class="col-sm-12"></div>
 </div>
 
 

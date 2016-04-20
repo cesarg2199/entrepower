@@ -1,4 +1,4 @@
-<div class="page-header text-center">
+<div class="page-header text-center entreBottom">
   <h1>Contact us</h1>
 </div>
 <div class="row">
