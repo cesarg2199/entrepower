@@ -1,7 +1,40 @@
 <script src="<?php echo base_url('assets/js/jquery-1.12.3.min.js');?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
-
+<script src="<?php echo base_url('assets/js/magnific.js');?>"></script>
 <script>
+
+	$(document).ready(function() {
+	$('.popup').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+		});
+	});
+
+	$('#myCarouselM').carousel({
+                interval: 5000
+        });
+
+        $('#carousel-text').html($('#slide-content-0').html());
+
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click( function(){
+                var id_selector = $(this).attr("id");
+                var id = id_selector.substr(id_selector.length-1);
+                var id = parseInt(id);
+                $('#myCarouselM').carousel(id);
+        });
+
+
+        // When the carousel slides, auto update the text
+        $('#myCarouselM').on('slid', function (e) {
+                var id = $('.item.active').data('slide-number');
+          		$('#carousel-text').html($('#slide-content-'+id).html());
+        });
 	
 
 	function verifyContactMessage()
