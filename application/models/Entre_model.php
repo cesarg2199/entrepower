@@ -17,7 +17,27 @@ class Entre_model extends CI_Model
     	$message = $this->input->post('message');
     	$method = $this->input->post('method');
 
-    	echo $method;
+        //set to_email id to which you want to receive mails
+        $toEmail = 'entrepower@gmail.com';
+
+        //Final messgae
+        $finalMessage = $message + "<br /> Best Method to Contact by: " + $method + "<br /> School Affiliation: " + $school;
+
+        //send mail
+        $this->email->from($email, $name);
+        $this->email->to($toEmail);
+        $this->email->subject("Contact Us Form");
+        $this->email->message($finalMessage);
+        if ($this->email->send())
+        {
+            // mail sent
+            return true;
+        }
+        else
+        {
+            //error
+            return false;
+        }
     }
 
     public function login()

@@ -77,6 +77,16 @@ class Power extends CI_Controller
 	public function sendContactEmail()
 	{
 		$status = $this->entre_model->sendContactEmail();
+
+		if($status)
+		{
+			//have pop up or soemthing show that it was a success or a failure
+			redirect(base_url('Power/contact'));
+		}
+		else
+		{
+			redirect(base_url('Power/contact'));
+		}
 	}
 
 	public function login()
